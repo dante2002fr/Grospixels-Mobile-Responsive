@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://www.grospixels.com/phpBB/index.php -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>Index du Forum - Forums Grospixels</title>
+<script src="./discussion_files/header.js"></script>
+<script src="./discussion_files/jquery.min.js"></script>
+<script src="./discussion_files/konamicode.js"></script>
+<!-- src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"-->
+
+<script>
+$(function() {
+	var $elem = $('#content');
+	$('#nav_down').click(function(e){$('html, body').animate({scrollTop: $elem.height()}, 1000);});
+	$('#nav_up').click(function(e){$('html, body').animate({scrollTop: '0px'}, 1000);});
+});
+</script>
+
+
+<style>
+<!-- 
+html,body {margin:0; padding:0; height:100%; border:none;}
+body {background:#FFFFFF url('themes/GP_light/background.png') repeat-y top; color:#4A4A4A; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
+header, footer, nav, main, article, section, aside, figure {display: block;}
+img {border:0px;}
+a:link {color: #4A4A4A}
+a:visited {color: #4A4A4A}
+hr{height:1px; width:100%; border:0px; color:#4A4A4A; background-color:#4A4A4A;}
+
+.forum_position {margin:Auto; width:100%; max-width:1030px; padding: 15px 0px;}
+.contenu {margin:Auto; min-height:100%; width:97%; max-width:1000px; padding:0px 0px 0px 0px; text-align:center;}
+.head {width:100%;}
+.essentiel {width:100%;}
+.tail {width:100%; text-align:center;}
+
+.formulaire {width:90%; max-width:750px; background-color:#888888; box-shadow: 0px 0px 3px 0px #999999;}
+.backtable {width:99%; margin-top:6px; background-color:#888888; box-shadow: 0px 0px 3px 0px #999999; border-radius:3px;}
+
+.info {margin:auto; width:90%; max-width:750px; padding:10px; background-color:#C9D5D7; border:1px solid #000000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.hat {background-color:#C9D5D7; font-size:11px; Font-Weight:Bold;}
+
+.forum {margin:0px; width:100%; border:0px; text-align:center; vertical-align:middle; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.forum td {padding:2px;}
+.forum tr:hover.C2S2 {background-color:#FFFFFF; opacity:0.90; filter:Alpha(opacity=90);}
+.last_post a{text-decoration:none; font-size:10px;}
+
+.topic {margin:0px; width:100%; border:0px; text-align:center; vertical-align:middle; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.topic td {padding:3px;}
+
+.hiscore {margin:1px; width:500px; border:0px; background-color: #888888; text-align:center; vertical-align:top; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4A4A4A;}
+.hshat {background-color: #C9D5D7; font-size:13px;}
+.hsC2S2 {background-color: #FFFFFF; font-size:13px;}
+.hiscore tr:hover.hsC2S2 {background-color:#FFFFFF; opacity:0.90; filter:Alpha(opacity=90);}
+
+.minpagegen {Display:inline; float:right; padding: 2px 0px 1px 0px;}
+.minpages {margin:4px 2px 1px 5px; font-size:10px; font-family:arial}
+.minpages a {padding:0px 2px; margin:1px; border-top-right-radius:3px; border:1px Solid #999999; background-color:#D5EAF0; color:#4A4A4A; font-size:11px; text-decoration:none;}
+.minpages a:hover {border:1px Solid #999999; background-color:#F3F3F9; color:#4A4A4A; font-size:11px;}
+
+.colgauche {width:22%; vertical-align:top;}
+.C1S1 {background-color: #C9D5D7; font-size:10px;}
+.C1S2 {background-color: #C9D5D7; font-size:13px;}
+.C2S1 {background-color: #F6F6F7; font-size:10px;}
+.C2S2 {background-color: #F6F6F7; font-size:13px;}
+
+.small {font-size:10px;}
+.normal {font-size:13px;}
+.big {font-size:16px;}
+
+.pagediv {width:100%; text-align:left;}
+.pages a {padding:0px 3px; margin:2px; border-top-right-radius:5px; border:1px Solid #999999; background-color:#C5DAE0; color:#4A4A4A; font-size:13px; text-decoration:none;}
+.pages span {padding:0px 3px; margin:2px; border-top-right-radius:5px; border:1px Solid #999999; background-color:#A5BAC0; color:#4A4A4A; font-size:13px;}
+.pages a:hover {border:1px Solid #999999; background-color:#F0F0F6; color:#4A4A4A; font-size:13px;}
+.pageselect {border:1px Solid #4A4A4A; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+.message {max-width:800px; font-size:13px; overflow:hidden;}
+
+.blink a{color: #FF0000; text-decoration: none; font-weight:bold;}
+.spoiler {background-color: #DFDFDF; color: #DFDFDF;}
+.spoiler a {background-color: #DFDFDF; color: #DFDFDF;}
+.spoiler img {opacity:0;filter:alpha(opacity=0);}
+.quoteA {margin:Auto; width:90%; font-size:x-small;}
+.quoteB {padding:5px; background-color: #E0E0E0; border:1px Solid #777777; text-align:justify; max-height:150px; overflow-y:auto;}
+.codeA {margin:Auto; width:90%; font-size:x-small;}
+.codeB {padding:5px; background-color: #E0E0E0; border:1px Solid #777777; text-align:justify; max-height:150px; overflow-y:scroll; font-family:Courier, sans-serif; font-size:12px;}
+.imgBBcode {max-width:640px; max-height:480px;}
+.avatar {max-width:76px; max-height:76px; margin:7px 2px; border-width:1px 0px; border-style:solid; border-color:#4A4A4A; text-align:center;}
+.avatar img {max-width:64px; max-height:64px; margin:6px; border:0px;}
+.pointille {color: #4A4A4A; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #4A4A4A; text-decoration: none;}
+
+.audio {min-height:5px; border-radius:8px; background-color:#FFA000;}
+
+input, button, textarea, select, option {background-color:#F3F3F3;}
+input, button, textarea, select {border:1px solid #888888; border-radius:3px; box-shadow:1px 1px 2px #CCCCCC inset;}
+input[type=radio] {background-color:transparent; border:none; width:10px;}
+button, input[type=submit], input[type=reset] {border-radius:5px; background-color:#EEEEEE; padding:2px 3px; box-shadow:0px 0px 1px #444444; cursor:pointer;}
+button:hover, input[type=submit]:hover, input[type=reset]:hover {background-color:#DDDDDD; cursor:pointer;}
+button:active, input[type=submit]:active, input[type=reset]:active {background-color:#CCCCCC; cursor:pointer;}
+.markread {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; margin:6px 0px 0px 0px; padding:1px;}
+
+/* General text */
+.gen {font-size: 12px;}
+.genmed {font-size: 11px;}
+.gensmall {font-size: 10px;}
+.gen,.genmed,.gensmall { color : #000000;}
+.genmed2 {color: #FFFFFF; font-size: 11px;}
+a.gen,a.genmed,a.gensmall {color: #006699; text-decoration: none;}
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{color: #DD6900; text-decoration: underline;}
+/* The buttons used for bbCode styling in message post */
+input.button {background-color: #EFEFEF; color: #000000; font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+/* This is the line which shows the rollover help line */
+.helpline {background-color: #DEE3E7; border-style: none;}
+/* Form elements */
+input,textarea, select {color: #000000;	font: normal 11px Verdana, Arial, Helvetica, sans-serif; border-color: #000000;}
+/* The text input fields background colour */
+input.post, textarea.post, select {background-color: #FFFFFF;}
+input {text-indent: 2px;}
+--></style>
+
+<script language="javascript" type="text/javascript">
+<!--
+function change(id){
+	ID = document.getElementById(id);
+	if(ID.style.display == "") ID.style.display = "none";
+	else ID.style.display = "";
+	}
+
+function GetId(id){return document.getElementById(id);}
+var i=false; // La variable i nous dit si la bulle est visible ou non
+function move(e) {
+if(i) {  // Si la bulle est visible, on calcul en temps reel sa position ideale
+if (navigator.appName!="Microsoft Internet Explorer") { // Si on est pas sous IE
+GetId("curseur").style.left=e.pageX + 5+"px";
+GetId("curseur").style.top=e.pageY + 10+"px";
+}
+else {
+if(document.documentElement.clientWidth>0) {
+GetId("curseur").style.left=20+event.x+document.documentElement.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.documentElement.scrollTop+"px";
+} else {
+GetId("curseur").style.left=20+event.x+document.body.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.body.scrollTop+"px";
+}}}}
+function montre(text) {
+if(i==false) {
+GetId("curseur").style.visibility="visible";
+GetId("curseur").innerHTML = text; // on copie notre texte dans l'élément html
+i=true;
+}}
+function cache() {
+if(i==true) {
+GetId("curseur").style.visibility="hidden";
+i=false;
+}}
+document.onmousemove=move; // dès que la souris bouge, on appelle la fonction move pour mettre à jour la position de la bulle.
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+
+<style>
+.video,.youtube,.dailymotion {width:480px;height:270px}
+input[type=image] {background-color:transparent; border:none; border-radius:none; box-shadow:none;}
+.infoscore {position: absolute; z-index: 100; visibility: hidden; padding: 4px; font: 13px Verdana, Arial, Helvetica, sans-serif; font-weight: normal; width: 200px; border: 1px solid #000000; background-color : #FFFFCC; display: inline; text-align:center; color:#4A4A4A; border-radius:4px; box-shadow:2px 3px 6px #606060;}
+</style><style>#ENOE_TOOLBAR_CONTAINER *, #ENOE_TOOLBAR_CONTAINER *::before,#ENOE_TOOLBAR_CONTAINER *::after {
+    min-width: unset !important;
+    min-height: unset !important;
+}
+
+      #ENOE_TOOLBAR_CONTAINER {
+
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-align: left;
+        color: white;
+        overflow: hidden;
+        padding: 4px;
+        border: none;
+        margin: 0px;
+        align-content: center;
+        align-items: center;
+        height: 40px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+      }
+      
+      #ENOE_TOOLBAR_CONTAINER_MAX{
+
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-align: left;
+        color: white;
+        overflow: hidden;
+        padding: 4px;
+        border: none;
+        margin: 0px;
+        align-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        height: 40px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+      }
+      
+      #ENOE_maximize{
+          color: white;
+        text-decoration: none;
+      }
+
+      #content-table {
+        padding: 0px;
+        border: none;
+        margin: 0px;
+        border-spacing: 0px;
+        margin-left: 5px;
+        width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      
+      #content-table-min {
+        padding: 0px;
+        border: none;
+        margin: 0px;
+        border-spacing: 0px;
+        margin-left: 5px;
+        width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+
+      #bar_promo {
+
+        cursor: pointer;
+
+        position: relative;
+
+        /* top:            -2px; */
+
+        text-decoration: underline;
+
+        margin-left: 20px;
+        color: white;
+        display: inline-block;
+      }
+     
+
+
+      .bar_title {
+        font-weight: bold;
+        position: relative;
+        /* margin-left: 5px; */
+        padding-left: 5px;
+        padding-right: 5px;
+        line-height: 26px;
+        display: block;
+        float: left;
+        height: 26px;
+      }
+
+      #bar_text, #bar_booking {
+        display: flex;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-weight: 300 !important;
+        color: white;
+        text-decoration: none;
+      }
+
+      #bar_title_inact {
+        cursor: pointer;
+        background-color: #026cb1;
+        color: white;
+        display: inline;
+        height: 26px;
+        line-height: 26px;
+      }
+
+      #bar_title_act {
+        background-color: white;
+        color: #55d255;
+        display: inline;
+      }
+
+      #bar_title_inact:hover {
+        color: #55d255;
+      }
+
+      #bar_title_act:hover {
+        color: #026cb1;
+      }
+
+      #shifted{
+          margin-bottom: 20px;
+      }
+
+      #bar_text:visited {
+        color:  #5aa3f3;
+      }
+      #bar_text,
+      #bar_booking {
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+	cursor: pointer;
+        text-decoration: none;
+      }
+      #bar_promo {
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: rgb(34, 46, 113);
+	cursor: pointer;
+        text-decoration: none;
+      }
+      #bar_text
+      {
+        color:  rgb(34, 46, 113);
+      line-height: 26px;
+        transition: .18s;
+        height: 26px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-weight: normal;
+      }
+      
+      #bar_booking {
+        color: rgba(255,255,255,.85);
+        line-height: 26px;
+        transition: .18s;
+        height: 26px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      /*#bar_text:hover {
+        color: rgba(255,255,255,1);
+        text-shadow: 0 1px 1px rgba(255,255,255,.4);
+      }*/
+
+      .bar_promo {
+        position: relative;
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        color: rgb(34, 46, 113);
+      }
+
+      .bar_promo__container {
+        position: relative;
+        display: flex;
+        background-color: white;
+        border-radius: 30px;
+        border: solid 1px white;
+        text-decoration: none;
+        align-content: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 26px;
+    height: 26px;
+        width: 60px;
+}
+
+
+      .bar_promo__container--blue {
+        background-color: #5aa3f3;
+      }
+
+      .bar_promo__container--green {
+        background-color: #59dc87;
+      }
+
+      .booking__container {
+        position: relative;
+        display: flex;
+        background-color: #5aa3f3;
+        border-radius: 30px;
+        text-align: center;
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+            line-height: 2 !important;
+
+      }
+      
+      .user__container {
+        position: relative;
+        display: flex;
+        background-color: white;
+        border-radius: 30px;
+        text-align: center;
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+            line-height: 2 !important;
+
+      }
+        
+      .bar_promo__icon {
+        display: inline-block;
+        height: 18px !important;
+        margin-right: 4px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+
+      .bar_promo__text {
+        display: inline-block;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-right: 15px;
+      }
+
+      .bar_promo__arrow {
+        display: inline-block;
+        width: 9px;
+        height: 7px;
+        margin-left: 4px;
+        margin-right: 8px;
+            margin-bottom: 2px;
+      }
+
+      .bar_center {
+        padding-left: 20px;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+        text-align: left;
+        display: flex;
+      }
+
+      
+      #bar_title_inact {
+    border-radius: 5px;
+    background-color: #59dc87;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    text-align: center;
+      }
+
+      #bar_title_act {
+        border-radius: 5px;
+        background-color: #fff;
+
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #242933;
+        display: inline-block;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+      }
+
+      #bar_title_inact:hover {
+        color: #fff;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #bar_title_act:hover {
+            color: #222e71;
+      }
+
+      #ENOE_minimize {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 400 !important;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        text-decoration: none;
+        margin-right: 10px;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+      }
+
+      #ENOE_minimize:visited {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .chevron-left {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        height: 6px !important;
+        vertical-align: middle;
+      }
+      
+     .chevron-right {
+        transform: rotate(-90deg);
+        height: 8px !important;
+    vertical-align: initial;
+    margin-top: 2px;
+      }
+.merchant__price-old {
+  position: relative;
+  line-height: normal;
+  letter-spacing: 0px;
+  text-align: center;
+    }
+  .merchant__price-old::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: 120%;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.3); 
+}      
+      .merchant__price-arrow {
+        width: 10px;
+        height: 15.4px;
+        margin-left: 12px;
+        margin-right: 7px;
+    }
+    
+      input[type='button'] {
+        /* height: 30px; */
+        margin-bottom: 20px;
+      }
+
+      #title {
+        color: #5aa3f3;
+      }
+
+
+      /* new styles */
+      .container_toolbar {
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 15px;
+        background-color: white;
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #222e71;
+        width: 500px;
+        height: auto;
+        max-height: 70vh;
+        box-shadow: -4px 4px 4px lightgrey;
+        display: none;
+        position: fixed;
+        z-index: 99999999999;
+        overflow-y: scroll;
+      }
+
+      .promo-code__section {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .promo-code__item {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+        padding: 16px 12px;
+        padding-left: 18px;
+        background-repeat: no-repeat;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s;
+            border-radius: 30px;
+    background-color: whitesmoke;
+      }
+
+      .promo-code__title {
+        font-weight: 500;
+      }
+
+      .promo-code__value {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        width: 100px;
+                font-size: 20px;
+      }
+
+      .promo-code__value-section {
+        margin-bottom: 8px;
+      }
+
+      .promo-code__condition {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .promo-code__list-text {
+        position: relative;
+        margin-bottom: 12px;
+      }
+
+
+
+      .promo-code__validity {
+        font-size: 12px;
+        font-weight: 400;
+      }
+
+      .copyBtn {
+        border: none;
+        padding: 6px 12px;
+        margin-left: 16px;
+        background-color: #59dc87;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        display: inline-block;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    .cb_button {
+    border-radius: 5px;
+    background-color: #59dc87;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 8%);
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    text-align: center;
+    border:  none;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ cursor: pointer;
+    }
+    
+    
+.tb_result {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.tb_result .tb_result_header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  height: 65px;
+  border: none;
+  border-bottom: 3px solid #006eaf;
+  color: #006eaf;
+  font-family: 'Helvetica Rounded', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 43px;
+  cursor: pointer;
+}
+
+.tb_result .tb_result_header span {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.tb_result .tb_result_header img {
+  vertical-align: text-bottom;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.tb_result .tb_result_data {
+  padding: 0 15px;
+  overflow: auto;
+}
+
+.tb_result .tb_result_data:before,
+.tb_result .tb_result_data:after {
+  content: " ";
+  display: table;
+}
+
+.tb_result .tb_result_data .merchant_list_home:before,
+.tb_result .tb_result_data .merchant_list_home:after {
+  content: " ";
+  display: table;
+}
+
+.tb_result .tb_result_data .merchant_list_home.tpl_menu3 {
+  margin-top: 15px;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table {
+  display: table;
+  width: 100%;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table .row {
+  margin: 0;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header {
+  display: table-header-group;
+  text-align: center;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row {
+  height: 35px;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row .merchant_header_name {
+  text-align: left;
+  width: 110px;
+  display: table-cell;
+  /* text-align: center; */
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row .merchant_header_remb {
+  width: 175px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row .merchant_header_code {
+  width: 115px;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_cell {
+  vertical-align: bottom;
+  height: 25px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #006eaf;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_cell a {
+  text-decoration: none;
+  color: #006eaf;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body {
+  text-align: center;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body>.merchant_table_row {
+  position: relative;
+  box-sizing: content-box;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body>.merchant_table_row .merchant_header_name {
+  text-align: left;
+  width: 90px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body>.merchant_table_row .merchant_header_name img {
+  padding-left: 85px;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body>.merchant_table_row .merchant_header_remb {
+  width: 230px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body>.merchant_table_row .merchant_header_code {
+  width: 90px;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(1) {
+  text-align: left;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(1) h4 {
+  padding-left: 110px;
+  margin: 0;
+  display: none;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(2) h4 {
+  display: table;
+  width: 100%;
+  /* height: 100%; */
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(2) h4 span {
+  display: inline;
+  vertical-align: baseline;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell {
+  font-family: 'Helvetica Rounded', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #006eaf;
+  padding: 0;
+  vertical-align: middle;
+  background-size: 76px auto;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell h4 {
+  margin: 0;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell .pref {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  width: 50px;
+  margin-left: 25px;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell .pref.pref_yes {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px 20px;
+  background-image: url('https://www.capitalkoala.com/project/public/theme/site_ck/images/icons/favoris-etoile/ck_star-com-favliste.svg');
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell span.codes_ticket {
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('https://www.capitalkoala.com/project/public/theme/site_ck/images/icons/ck_ticket-codes-reduc-petit.svg');
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell span.codes_ticket h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_cell {
+  height: 50px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #006eaf;
+}
+
+#merchant_header_show {
+  width: 100%;
+  display: block;
+  border-bottom: none;
+}
+
+#merchant_link {
+  background: #55d255;
+  height: 42px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  margin-left: 75px;
+}
+
+#merchant_text {
+  width: 100%;
+}
+
+#merchant_increase {
+  text-decoration: line-through;
+  text-align: right;
+  /* width: 82px; */
+}
+
+#merchant_refund {
+  text-align: center;
+  padding-left: 5px;
+  color: #55d255;
+  /* width: 82px; */
+}
+
+.merchant_table_cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: none; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row {
+  height: initial; }
+
+.merchant_table_row {
+  background-color: #fff; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_cell {
+  height: initial;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9a9ea6;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_cell {
+  height: 50px;
+  padding-bottom: 8px;
+  border-bottom: none; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row .merchant_header_name {
+  padding-left: 28px; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_header .merchant_table_row .merchant_header_code {
+  padding-right: 28px; }
+
+.merchant_table_header > .merchant_table_row {
+  height: initial !important; }
+
+.tb_result_header {
+  background-color: #fff; }
+
+.merchant_table_body {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table .row {
+  margin: 0;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #eff2f8; }
+  .tb_result .tb_result_data .merchant_list_home .merchant_table .row:hover {
+    -webkit-box-shadow: 0 3px 7px 0 rgba(77, 94, 189, 0.14);
+    box-shadow: 0 3px 7px 0 rgba(77, 94, 189, 0.14); }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_cell {
+  padding-bottom: 0;
+  border-bottom: none; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(1) {
+  margin-left: 28px; }
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell:nth-of-type(3) {
+  margin-right: 28px; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body > .merchant_table_row .merchant_header_remb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Ubuntu"; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body > .merchant_table_row .merchant_header_code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table_body .merchant_table_cell {
+  background-size: contain;
+  background-position: center center; }
+
+#merchant_refund {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  color: #5aa3f3;
+  font-size: 18px;
+  font-weight: 700 !important;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #5aa3f3;
+  white-space: nowrap; }
+
+#merchant_promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 30px;
+  max-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 0;
+  background-color: #5aa3f3;
+  font-family: "Ubuntu";
+  margin-left: 28px; }
+
+.tb_result .tb_result_data {
+  padding: 0; }
+
+.tb_result .tb_result_data .merchant_list_home .merchant_table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+
+.table-merchant__name
+{
+    padding-left: 20px;
+}
+
+.table-merchant__td{
+
+    margin: 0;
+    padding: 10px 0;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5aa3f3;
+    
+
+}
+
+.table-merchant__row{
+        box-shadow: inset 0 -1px 0 0 #eff2f8;
+    cursor: pointer;
+}
+
+.reduce_container{
+    margin-right: 25px; 
+    place-content: center; 
+    align-items: center; 
+    font-family: Ubuntu, Arial, Helvetica, sans-serif; 
+    font-size: 15px; 
+    font-style: normal; 
+    font-stretch: normal; 
+    font-weight: 400 !important;
+                cursor: pointer;
+                line-height: 2rem;
+}
+
+.popover_ck {
+  position: absolute;
+  top: 0;
+  z-index: 99999999;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #55d255;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 2px solid #55d255;
+  border-radius: 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.popover_ck>.arrow,
+.popover_ck>.arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover_ck>.arrow {
+  border-width: 11px;
+}
+
+.popover_ck>.arrow:after {
+  border-width: 10px;
+  content: ""
+}
+
+.popover_ck.bottom>.arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #55d255;
+  top: -11px;
+}
+
+.popover_ck.bottom>.arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 2px;
+  border-bottom-color: #fff
+}
+
+
+
+.popover_ck-content {
+  padding: 9px 14px;
+}
+
+.crossclose {
+  float: right;
+  margin-right: 5px;
+  cursor: pointer;
+}</style>
+</head>
+
+
+<body><div id="ENOE_TOOLBAR_CONTAINER_MAX" style="margin: 0px; padding: 4px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; height: 40px; display: none; position: fixed; left: 0px; top: 0px; z-index: 2147483647; background-color: unset; background-image: linear-gradient(to right, rgb(90, 163, 243), rgb(77, 94, 189));"><div id="content-table-min">
+            <div style="width: 25px; padding-right:4px; background-color: transparent; white-space: nowrap;" id="icon_div">
+                <a href="https://www.grospixels.com/phpBB/index.php#" id="ENOE_maximize2"><img id="icon" alt="" src="./discussion_files/logo-white.png" style="height: 20px;vertical-align: middle;"></a>
+            </div>				
+            <div style="padding-right: 5px;"><a href="https://www.grospixels.com/phpBB/index.php#" id="ENOE_maximize">&nbsp;Voir&nbsp;<img class="chevron-right" src="./discussion_files/arrow_down_white.png"></a></div>
+</div></div><div id="ENOE_TOOLBAR_CONTAINER" style="width: 100%; margin: 0px; padding: 4px; height: 40px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; position: fixed; left: 0px; top: 0px; z-index: 2147483647; display: none; background-color: unset; background-image: linear-gradient(to right, rgb(90, 163, 243), rgb(77, 94, 189));"><div id="content-table">
+    
+            <div style="width: 25px; background-color: transparent; white-space: nowrap;display: flex;
+                     align-items: center;
+                     justify-content: center;" id="icon_div">
+                
+                    <img id="icon" alt="" src="./discussion_files/logo-white(1).png" style="height: 27px;vertical-align: middle;width: 33px;max-width: 33px;">
+            </div>
+            <div style="white-space: nowrap !important;display:  flex;
+                     align-items: center;
+                     justify-content: left;    width: 100% !important;">
+                    <div id="bar_title_inact" style="display: flex;">Activer les remboursements Koala</div>
+                    <div id="bar_title_act" class="bar_title" style="display: none;">
+                        Remboursements Koala activés</div>
+                    <div class="bar_center">
+                        <div class="user__container "><div id="bar_text"></div></div>
+                        <div id="bar_promo" class="bar_promo">
+                            <!-- D�tails et codes promos -->
+                            <div class="bar_promo__container " id="bar_promo__container">
+                                <img src="./discussion_files/promo_vert.png" class="bar_promo__icon" style="margin-right: 5px;">
+                                <p class="bar_promo__text" id="nb_codes">7</p>
+
+                            </div>
+                        </div>
+                        <div class="booking__container " id="booking_container" style="margin-left: 20px;display:none;"><div id="bar_booking" style="display:none;">Bénéficier de X% sur votre hébergement avec Booking</div></div>
+                    </div>
+            </div>
+                <div style="padding-right: 5px;
+                     display: flex;
+                     align-content: center;
+                     justify-content: flex-end;
+                     align-items: center;
+                         width: 100%;
+                     ">
+                    <div id="user__container" class="reduce_container" style="display: none;"></div>
+                    <a href="https://www.grospixels.com/phpBB/index.php#" id="ENOE_minimize"><img class="chevron-left" src="./discussion_files/arrow_down_white.png">  réduire</a>
+                    <div></div>
+                        
+                </div>
+</div>
+</div><div id="cashback_div" class="tb_result container_toolbar"><div style="display: none;">
+         <table id="cashback_open_item">
+          <tbody><tr class="table-merchant__row" data-type="link">
+            <td id="merchant_date" class="table-merchant__td table-merchant__date"></td>
+            <td id="merchant_name" class="table-merchant__td table-merchant__name"></td>
+            <td id="merchant_refund" class="table-merchant__td table-merchant__remb"></td>
+            <td class="table-merchant__td table-merchant__stat">
+              <img id="merchant_stat" src="./discussion_files/validated.png" class="table-merchant__stat-icon">
+            </td>
+          </tr>
+         </tbody></table>
+
+        </div>
+    <div class="tb_result_data">
+        <div class=" merchant_list_home tpl_menu3">
+            <table class="table-merchant__table">
+                <thead class="table-merchant__thead">
+                    <tr><th class="table-merchant__th table-merchant__th-date">Date</th>
+                        <th class="table-merchant__th table-merchant__th-name">Commerçant</th>
+                        <th class="table-merchant__th table-merchant__th-remb">Remboursements</th>
+                        <th class="table-merchant__th table-merchant__th-stat">&nbsp;</th>
+                    </tr></thead>
+
+                <tbody class="table-merchant__tbody" id="cashback_table_body">
+
+                </tbody>
+            </table>
+        </div>
+    </div></div><div id="details" class="container_toolbar">
+
+    <h1 id="title" style=""></h1>
+
+    <div class="shifted" id="shifted">    </div>  
+        
+    <div style="display: flex;justify-content: center;"><button class="cb_button" id="cb_button" type="button">Activer mes remboursements</button></div>
+
+
+</div><div id="promo" class="container_toolbar">                     
+
+    <div class="promo-code__item" id="promo__item_reduc" style="display:none;">
+        <div class="promo-code__list-text promo-code__title">
+        </div>
+    </div>
+    <!-- item -->
+    <div class="promo-code__item" id="promo__item" style="display:none;">
+        <div class="promo-code__list-text promo-code__title">
+        </div>
+        <div class="promo-code__value-section">
+            Code promo : <input class="promo-code__value" type="text" value="">
+            <button class="copyBtn">Copier</button>
+        </div>
+        <div class="promo-code__validity">Date de validité : <span id="expiration_date"></span></div>
+        <div class="promo-code__condition">Conditions : <span id="promo_conditions"></span></div>
+    </div>
+    <!-- END item -->	
+
+    <div class="promo-code__section shiftedpromos" id="promos">
+
+        <div id="bons_id" style="float: left; width: 100%; margin-top: 20px; font-weight: bold; margin-bottom: 20px; margin-left: 20px;">
+            Profitez des bons de réduction</div>
+
+    </div>
+    
+    <div style="display: flex;justify-content: center;"><button class="cb_button" id="cb_button2" type="button">Activer mes remboursements</button></div>
+
+    </div>
+
+<div id="nav_up" style="position:fixed; z-index:100; top:10px; right:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_up.png);"></div>
+<div id="nav_down" style="position:fixed; z-index:100; top:50px; right:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_down.png);"></div>
+
+<form method="post"><div id="nav_night" style="position:fixed; z-index:100; top:10px; left:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_night.png);"><input type="image" src="./discussion_files/page_night.png" alt="passer en mode nuit"></div><input type="hidden" name="switch_theme" value="1"></form>
+<!-- début du contenu -->
+<div class="forum_position">
+<div id="content" class="contenu">
+<center>
+<!-- début de l'entête -->
+<div class="head">
+
+<table style="width:100%; text-align:center; border-collapse:collapse;" cellpadding="0">
+<tbody><tr style="text-align:left; vertical-align:top; background-color:#C5DAE0; background:url(&#39;themes/GP_light/header2a.png&#39;) repeat-x;">
+<td rowspan="2" style="width:375px; height:190px; background:url(&#39;themes/GP_light/header1a.png&#39;) no-repeat top left;">
+<div style="margin:65px 0px 0px 13px; width:104px; height:66px; position:absolute;"><img id="ImageLogoId" src="./discussion_files/mascotte.png" width="104" height="66" align="top" alt="Forums de Grospixels" stlye="border:none;"></div>
+<a href="https://www.grospixels.com/phpBB/index.php"><div style="width:330px; height:190px; index-z:10; position:absolute; margin:0px;"></div></a></td>
+<td colspan="2" style="text-align:left; width:597px; height:90px; background:url(&#39;themes/GP_light/header3a.png&#39;) no-repeat top right;">
+<a href="https://www.grospixels.com/phpBB/index.php"><div style="width:195px; height:19px; index-z:10; position:relative; left:0px; top:90px; margin:0px; border:0;"></div></a></td>
+</tr>
+<tr style="background-color:#C5DAE0;">
+<td style="height:100px; text-align:left; vertical-align:middle; background:url(&#39;themes/GP_light/headersubtitle.png&#39;) no-repeat top left;">
+
+Bienvenue sur le forum de Grospixels : [ <a href="https://www.grospixels.com/phpBB/bb_register.php?mode=agreement" rel="nofollow">S'Enregistrer</a> ]<br>Déjà inscrit ? [ <a href="https://www.grospixels.com/phpBB/login.php" rel="nofollow">Connexion</a> ]
+</td>
+<td style="width:140px; height:100px; vertical-align:bottom; text-align:center;">
+
+&nbsp;
+</td>
+</tr>
+<tr style="text-align:left; vertical-align:top;">
+<td colspan="3">
+
+<table style="width:99%; text-align:center; border-spacing:5px;"><tbody><tr> 
+<td style="text-align:left; vertical-align:top;">
+<a href="https://www.grospixels.com/site/index.php"><img src="./discussion_files/but_site.gif" alt="retour sur le site"></a><br>
+<a href="https://www.grospixels.com/phpBB/search.php"><img src="./discussion_files/but_recherche.gif" alt="rechercher"></a></td>
+
+<td style="text-align:right;">531042 Messages • 2836 <a href="https://www.grospixels.com/phpBB/bb_memberlist.php">Inscrits</a> • Nouveau membre : GermainPix6<br>
+il y a 23 utilisateurs en ligne <a href="https://www.grospixels.com/phpBB/whosonline.php" rel="nofollow">actuellement</a> sur le forum</td>
+</tr></tbody></table>
+
+</td>
+</tr>
+</tbody></table></div>
+<!-- fin de l'entête -->
+<!-- début de la table des forums -->
+<div class="essentiel">
+
+<div class="backtable">
+<table class="forum" cellspacing="1">
+<tbody><tr class="hat">
+	<td style="width:4%;">&nbsp;</td>
+	<td style="text-align:left;">Forum</td>
+	<td style="width:8%;">Topics</td>
+	<td style="width:8%;">Messages</td>
+	<td style="width:20%;">Dernier Message</td>
+</tr>
+
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>Histoire des jeux vidéo</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic_new.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=1">Jeux</a><br><span class="small">Votre destination pour parler exclusivement des jeux vidéo ! Anciens ou nouveaux, chroniqués sur le site ou non, chaque jeu ou série doit avoir son topic dédié.</span></td>
+<td class="C1S2">3051</td>
+<td>116397</td>
+<td class="C1S1">le 09 juin 2026 à 13:54<br>par Archibald</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic_new.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=3">Sociétés et créateurs</a><br><span class="small">Rendez-vous dans cette section pour parler des constructeurs, des éditeurs et des développeurs.</span></td>
+<td class="C1S2">374</td>
+<td>17390</td>
+<td class="C1S1">le 09 juin 2026 à 21:53<br>par JiPé</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=6">Trivias et entraide</a><br><span class="small">Utilisez ce forum pour lancer des devinettes sur d'anciens jeux vidéo, retrouver un titre d'après sa description, ou demander un coup de main pour avancer dans un jeu.</span></td>
+<td class="C1S2">891</td>
+<td>35234</td>
+<td class="C1S1">le 04 juin 2026 à 23:28<br>par RainMakeR</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=17">Musique</a><br><span class="small">Ici on évoque la musique des jeux vidéo, sous sa forme originale ou bien reprise, réarrangée, remixée ou jouée en public.</span></td>
+<td class="C1S2">310</td>
+<td>6186</td>
+<td class="C1S1">le 25 mars 2026 à 15:05<br>par noah</td></tr>
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>Systèmes</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic_new.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=2">Micros et consoles</a><br><span class="small">Discutez ici des systèmes et accessoires vidéoludiques de toutes époques, leur développement, leur destin commercial et ce qu'ils évoquent pour vous.</span></td>
+<td class="C1S2">774</td>
+<td>75678</td>
+<td class="C1S1">le 08 juin 2026 à 23:54<br>par RainMakeR</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=7">Emulation</a><br><span class="small">Toute discussion sur l'émulation est la bienvenue dans cette section, à condition que la machine émulée ne soit plus commercialisée.</span></td>
+<td class="C1S2">440</td>
+<td>6823</td>
+<td class="C1S1">le 17 mai 2026 à 22:51<br>par Kaede</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=9">Technique</a><br><span class="small">Posez ici toutes les questions techniques portant sur le lancement de jeux vidéo et le fonctionnement de consoles ou accessoires de jeu.</span></td>
+<td class="C1S2">854</td>
+<td>8910</td>
+<td class="C1S1">le 10 novembre 2025 à 10:17<br>par Esteban</td></tr>
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>Labo</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=15">Groblogs</a><br><span class="small">Cette section contient des topics structurés à&nbsp; la façon d'un blog. Plus d'explications à l'intérieur.</span></td>
+<td class="C1S2">73</td>
+<td>13223</td>
+<td class="C1S1">le 30 mai 2026 à 00:35<br>par LVD</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=18">Créations</a><br><span class="small">Projets de jeux persos, artworks, fan fictions, etc. Venez nous montrer vos talents artistiques cachés !</span></td>
+<td class="C1S2">66</td>
+<td>1274</td>
+<td class="C1S1">le 27 avril 2026 à 14:19<br>par french snake</td></tr>
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>Jeu vidéo : discussion générale</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic_new.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=12">Discussions &amp; Débats</a><br><span class="small">Pour tous les sujets trop larges pour être classés dans les précédentes catégories du forum, mais strictement limités au domaine du jeu vidéo.</span></td>
+<td class="C1S2">1842</td>
+<td>69280</td>
+<td class="C1S1">le 09 juin 2026 à 21:52<br>par JiPé</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=4">Evénements</a><br><span class="small">Ici on commente ou annonce tout ce qui concerne les salons, festivals, expositions et toutes sortes de manifestations en rapport avec le jeu vidéo de toutes époques.</span></td>
+<td class="C1S2">240</td>
+<td>7279</td>
+<td class="C1S1">le 18 janvier 2026 à 22:37<br>par RainMakeR</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=5">Gromatches</a><br><span class="small">Refaites le match en compagnie du célèbre Eugène SaColeco. Plus d'explications à l'intérieur.</span></td>
+<td class="C1S2">51</td>
+<td>1953</td>
+<td class="C1S1">le 31 août 2023 à 14:43<br>par RainMakeR</td></tr>
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>The Grospixels' Arena</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=13">Compétition</a><br><span class="small">Concours de high-scores locaux ou inter-forums, défis lancés aux autres membres, speedruns, vantardise sur les succès ou trophées... La section où on se tire la bourre, c'est ici.</span></td>
+<td class="C1S2">197</td>
+<td>10357</td>
+<td class="C1S1">le 03 mai 2026 à 14:16<br>par J</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=14">Jeu en ligne</a><br><span class="small">Echangez ici vos coordonnées pour vous retrouver sur tous les serveurs imaginables, organisez des rendez-vous et venez ensuite nous raconter et commenter ce qui s'est passé.</span></td>
+<td class="C1S2">191</td>
+<td>9526</td>
+<td class="C1S1">le 07 mars 2026 à 16:29<br>par french snake</td></tr>
+<tr class="hat" style="text-align:left;"><td colspan="5"><u>Hors-sujet</u></td></tr><tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic_new.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=8">Hors-sujet</a><br><span class="small">Les discussions qui ne concernent pas les jeux vidéo ont lieu exclusivement ici.</span></td>
+<td class="C1S2">2783</td>
+<td>100525</td>
+<td class="C1S1">le 09 juin 2026 à 21:53<br>par JiPé</td></tr>
+<tr class="C2S2"><td class="C1S2"><img src="./discussion_files/topic.gif" alt=""></td>
+<td style="text-align:left; vertical-align:top;"><a href="https://www.grospixels.com/phpBB/viewforum.php?forum=16">Vie du site</a><br><span class="small">Discussions sur les fonctionnalités du Grospixels, l'équipe et la communauté. (NB: Pour réagir aux articles du site, utilisez plutôt la section jeux en tête de forum).</span></td>
+<td class="C1S2">551</td>
+<td>15819</td>
+<td class="C1S1">le 29 mai 2026 à 19:56<br>par RainMakeR</td></tr>
+
+</tbody></table>
+</div>
+
+
+</div>
+<!-- fin de la table des forums -->
+<br>
+<!-- début de la queue -->
+<div class="tail"><br><br>Forum www.grospixels.com (© 2011-2019 Grospixels)</div>
+</center>
+</div>
+<!-- fin de contenu -->
+</div>
+<!-- fin de forum_position -->
+</body></html>
