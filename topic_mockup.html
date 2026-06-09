@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+
+<TITLE>Règlement général des forums : à lire avant de poster (page 1) - Forums Grospixels</TITLE>
+<script src="header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/script/konamicode.js"></script>
+<!-- src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"-->
+
+<script>
+$(function() {
+	var $elem = $('#content');
+	$('#nav_down').click(function(e){$('html, body').animate({scrollTop: $elem.height()}, 1000);});
+	$('#nav_up').click(function(e){$('html, body').animate({scrollTop: '0px'}, 1000);});
+});
+</script>
+
+<style type="text/css">
+div.mcgq_tag {
+	position:relative;
+	font-weight:bold;
+	margin: 1px;
+	padding: 1px; 
+	float: left;
+	border-style: solid;
+	border-collapse:collapse;
+	border-width:1px;
+	border-color:white;
+	color:black;
+	font-size:10px;
+	background-color: orange;
+}
+
+div#mcgq_classement {
+	/*background-color: yellow;*/
+}
+
+div#mcgq_score {
+	/*background-color: red;*/
+}
+
+div#mcgq_pourcentage {
+	background-color: orange;
+}
+
+div#mcgq_perfect {
+	background-color: grey;
+}
+
+</style>
+
+<style>
+<!-- 
+html,body {margin:0; padding:0; height:100%; border:none;}
+body {background:#FFFFFF url('themes/GP_light/background.png') repeat-y top; color:#4A4A4A; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px;}
+header, footer, nav, main, article, section, aside, figure {display: block;}
+img {border:0px;}
+a:link {color: #4A4A4A}
+a:visited {color: #4A4A4A}
+hr{height:1px; width:100%; border:0px; color:#4A4A4A; background-color:#4A4A4A;}
+
+.forum_position {margin:Auto; width:100%; max-width:1030px; padding: 15px 0px;}
+.contenu {margin:Auto; min-height:100%; width:97%; max-width:1000px; padding:0px 0px 0px 0px; text-align:center;}
+.head {width:100%;}
+.essentiel {width:100%;}
+.tail {width:100%; text-align:center;}
+
+.formulaire {width:90%; max-width:750px; background-color:#888888; box-shadow: 0px 0px 3px 0px #999999;}
+.backtable {width:99%; margin-top:6px; background-color:#888888; box-shadow: 0px 0px 3px 0px #999999; border-radius:3px;}
+
+.info {margin:auto; width:90%; max-width:750px; padding:10px; background-color:#C9D5D7; border:1px solid #000000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.hat {background-color:#C9D5D7; font-size:11px; Font-Weight:Bold;}
+
+.forum {margin:0px; width:100%; border:0px; text-align:center; vertical-align:middle; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.forum td {padding:2px;}
+.forum tr:hover.C2S2 {background-color:#FFFFFF; opacity:0.90; filter:Alpha(opacity=90);}
+.last_post a{text-decoration:none; font-size:10px;}
+
+.topic {margin:0px; width:100%; border:0px; text-align:center; vertical-align:middle; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#4A4A4A;}
+.topic td {padding:3px;}
+
+.hiscore {margin:1px; width:500px; border:0px; background-color: #888888; text-align:center; vertical-align:top; font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #4A4A4A;}
+.hshat {background-color: #C9D5D7; font-size:13px;}
+.hsC2S2 {background-color: #FFFFFF; font-size:13px;}
+.hiscore tr:hover.hsC2S2 {background-color:#FFFFFF; opacity:0.90; filter:Alpha(opacity=90);}
+
+.minpagegen {Display:inline; float:right; padding: 2px 0px 1px 0px;}
+.minpages {margin:4px 2px 1px 5px; font-size:10px; font-family:arial}
+.minpages a {padding:0px 2px; margin:1px; border-top-right-radius:3px; border:1px Solid #999999; background-color:#D5EAF0; color:#4A4A4A; font-size:11px; text-decoration:none;}
+.minpages a:hover {border:1px Solid #999999; background-color:#F3F3F9; color:#4A4A4A; font-size:11px;}
+
+.colgauche {width:22%; vertical-align:top;}
+.C1S1 {background-color: #C9D5D7; font-size:10px;}
+.C1S2 {background-color: #C9D5D7; font-size:13px;}
+.C2S1 {background-color: #F6F6F7; font-size:10px;}
+.C2S2 {background-color: #F6F6F7; font-size:13px;}
+
+.small {font-size:10px;}
+.normal {font-size:13px;}
+.big {font-size:16px;}
+
+.pagediv {width:100%; text-align:left;}
+.pages a {padding:0px 3px; margin:2px; border-top-right-radius:5px; border:1px Solid #999999; background-color:#C5DAE0; color:#4A4A4A; font-size:13px; text-decoration:none;}
+.pages span {padding:0px 3px; margin:2px; border-top-right-radius:5px; border:1px Solid #999999; background-color:#A5BAC0; color:#4A4A4A; font-size:13px;}
+.pages a:hover {border:1px Solid #999999; background-color:#F0F0F6; color:#4A4A4A; font-size:13px;}
+.pageselect {border:1px Solid #4A4A4A; font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+.message {max-width:800px; font-size:13px; overflow:hidden;}
+
+.blink a{color: #FF0000; text-decoration: none; font-weight:bold;}
+.spoiler {background-color: #DFDFDF; color: #DFDFDF;}
+.spoiler a {background-color: #DFDFDF; color: #DFDFDF;}
+.spoiler img {opacity:0;filter:alpha(opacity=0);}
+.quoteA {margin:Auto; width:90%; font-size:x-small;}
+.quoteB {padding:5px; background-color: #E0E0E0; border:1px Solid #777777; text-align:justify; max-height:150px; overflow-y:auto;}
+.codeA {margin:Auto; width:90%; font-size:x-small;}
+.codeB {padding:5px; background-color: #E0E0E0; border:1px Solid #777777; text-align:justify; max-height:150px; overflow-y:scroll; font-family:Courier, sans-serif; font-size:12px;}
+.imgBBcode {max-width:640px; max-height:480px;}
+.avatar {max-width:76px; max-height:76px; margin:7px 2px; border-width:1px 0px; border-style:solid; border-color:#4A4A4A; text-align:center;}
+.avatar img {max-width:64px; max-height:64px; margin:6px; border:0px;}
+.pointille {color: #4A4A4A; border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #4A4A4A; text-decoration: none;}
+
+.audio {min-height:5px; border-radius:8px; background-color:#FFA000;}
+
+input, button, textarea, select, option {background-color:#F3F3F3;}
+input, button, textarea, select {border:1px solid #888888; border-radius:3px; box-shadow:1px 1px 2px #CCCCCC inset;}
+input[type=radio] {background-color:transparent; border:none; width:10px;}
+button, input[type=submit], input[type=reset] {border-radius:5px; background-color:#EEEEEE; padding:2px 3px; box-shadow:0px 0px 1px #444444; cursor:pointer;}
+button:hover, input[type=submit]:hover, input[type=reset]:hover {background-color:#DDDDDD; cursor:pointer;}
+button:active, input[type=submit]:active, input[type=reset]:active {background-color:#CCCCCC; cursor:pointer;}
+.markread {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; margin:6px 0px 0px 0px; padding:1px;}
+
+/* General text */
+.gen {font-size: 12px;}
+.genmed {font-size: 11px;}
+.gensmall {font-size: 10px;}
+.gen,.genmed,.gensmall { color : #000000;}
+.genmed2 {color: #FFFFFF; font-size: 11px;}
+a.gen,a.genmed,a.gensmall {color: #006699; text-decoration: none;}
+a.gen:hover,a.genmed:hover,a.gensmall:hover	{color: #DD6900; text-decoration: underline;}
+/* The buttons used for bbCode styling in message post */
+input.button {background-color: #EFEFEF; color: #000000; font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+/* This is the line which shows the rollover help line */
+.helpline {background-color: #DEE3E7; border-style: none;}
+/* Form elements */
+input,textarea, select {color: #000000;	font: normal 11px Verdana, Arial, Helvetica, sans-serif; border-color: #000000;}
+/* The text input fields background colour */
+input.post, textarea.post, select {background-color: #FFFFFF;}
+input {text-indent: 2px;}
+--></style>
+
+<script language="javascript" type="text/javascript">
+<!--
+function change(id){
+	ID = document.getElementById(id);
+	if(ID.style.display == "") ID.style.display = "none";
+	else ID.style.display = "";
+	}
+
+function GetId(id){return document.getElementById(id);}
+var i=false; // La variable i nous dit si la bulle est visible ou non
+function move(e) {
+if(i) {  // Si la bulle est visible, on calcul en temps reel sa position ideale
+if (navigator.appName!="Microsoft Internet Explorer") { // Si on est pas sous IE
+GetId("curseur").style.left=e.pageX + 5+"px";
+GetId("curseur").style.top=e.pageY + 10+"px";
+}
+else {
+if(document.documentElement.clientWidth>0) {
+GetId("curseur").style.left=20+event.x+document.documentElement.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.documentElement.scrollTop+"px";
+} else {
+GetId("curseur").style.left=20+event.x+document.body.scrollLeft+"px";
+GetId("curseur").style.top=10+event.y+document.body.scrollTop+"px";
+}}}}
+function montre(text) {
+if(i==false) {
+GetId("curseur").style.visibility="visible";
+GetId("curseur").innerHTML = text; // on copie notre texte dans l'élément html
+i=true;
+}}
+function cache() {
+if(i==true) {
+GetId("curseur").style.visibility="hidden";
+i=false;
+}}
+document.onmousemove=move; // dès que la souris bouge, on appelle la fonction move pour mettre à jour la position de la bulle.
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+
+<style>
+.video,.youtube,.dailymotion {width:480px;height:270px}
+input[type=image] {background-color:transparent; border:none; border-radius:none; box-shadow:none;}
+.infoscore {position: absolute; z-index: 100; visibility: hidden; padding: 4px; font: 13px Verdana, Arial, Helvetica, sans-serif; font-weight: normal; width: 200px; border: 1px solid #000000; background-color : #FFFFCC; display: inline; text-align:center; color:#4A4A4A; border-radius:4px; box-shadow:2px 3px 6px #606060;}
+</style>
+</head>
+
+
+<body>
+
+<div id="nav_up" style="position:fixed; z-index:100; top:10px; right:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_up.png);"></div>
+<div id="nav_down" style="position:fixed; z-index:100; top:50px; right:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_down.png);"></div>
+
+<form method="post"><div id="nav_night" style="position:fixed; z-index:100; top:10px; left:10px; width:40px; height:40px; opacity:0.20; background:url(themes/page_night.png);"><input type="image" src="themes/page_night.png" alt="passer en mode nuit"></div><input type="hidden" name="switch_theme" value="1"></form>
+<!-- début du contenu -->
+<div class="forum_position">
+<div id="content" class="contenu">
+<center>
+<!-- début de l'entête -->
+<div class="head">
+
+<table style="width:100%; text-align:center; border-collapse:collapse;" cellpadding="0">
+<tr style="text-align:left; vertical-align:top; background-color:#C5DAE0; background:url('themes/GP_light/header2a.png') repeat-x;">
+<td rowspan="2" style="width:375px; height:190px; background:url('themes/GP_light/header1a.png') no-repeat top left;">
+<div style="margin:65px 0px 0px 13px; width:104px; height:66px; position:absolute;"><img ID="ImageLogoId" src="themes/GP_light/mascotte.png" width="104" height="66" align="top" alt="Forums de Grospixels" stlye="border:none;"></div>
+<a href="/phpBB/index.php"><div style="width:330px; height:190px; index-z:10; position:absolute; margin:0px;"></div></a></td>
+<td colspan="2" style="text-align:left; width:597px; height:90px; background:url('themes/GP_light/header3a.png') no-repeat top right;">
+<a href="/phpBB/index.php"><div style="width:195px; height:19px; index-z:10; position:relative; left:0px; top:90px; margin:0px; border:0;"></div></a></td>
+</tr>
+<tr style="background-color:#C5DAE0;">
+<td style="height:100px; text-align:left; vertical-align:middle; background:url('themes/GP_light/headersubtitle.png') no-repeat top left;">
+
+Bienvenue sur le forum de Grospixels : [ <a href="bb_register.php?mode=agreement" rel="nofollow">S'Enregistrer</a> ]<br>Déjà inscrit ? [ <a href="/phpBB/login.php" rel="nofollow">Connexion</a> ]
+</td>
+<td style="width:140px; height:100px; vertical-align:bottom; text-align:center;">
+
+<img style="margin-right:10px;" src="themes/GP_light/bouton_closed.png" alt="Topic Verrouillé" vspace=10 border=0>
+
+</td>
+</tr>
+<tr style="text-align:left; vertical-align:top;">
+<td colspan="3">
+
+<table style="width:99%; text-align:center; border-spacing:5px;"><tr> 
+<td style="text-align:left; vertical-align:top;">
+<a href="https://www.grospixels.com/site/index.php"><IMG SRC="themes/GP_light/but_site.gif" alt="retour sur le site"></a><br>
+<a href="search.php"><IMG SRC="themes/GP_light/but_recherche.gif" alt="rechercher"></a></td>
+
+
+</tr></table>
+
+</td>
+</tr>
+</table></div>
+<!-- fin de l'entête -->
+<!-- début de la table des forums -->
+<div class="essentiel">
+<div class="pagediv">
+<TABLE style="width:100%; text-align:center; border:none;"><TR><TD style="width:60%; text-align:left; vertical-align:middle;"><a href="/phpBB/index.php">Index du Forum</a><b> » » </b><a href="/phpBB/viewforum.php?forum=1">Jeux</a><b> » » </b>Règlement général des forums : à lire avant de poster</TD><TD style="width:40%; text-align:right; vertical-align:middle;"><form name="form1"><div style="font-size:13px; margin-bottom:3px;">1 message &#8226; page <select name="menu1" class="pageselect" onChange="MM_jumpMenu('parent',this,0)"><option value="viewtopic.php?topic=3801&amp;forum=1&amp;start=0" selected>1</option></select></div><span class="pages"><span>1</span></span></form>
+</TD></TR></TABLE></div>
+
+<div class="backtable">
+<TABLE class="topic" CELLSPACING="1">
+<TR>
+<TD class="hat" style="width:22%; vertical-align:left;">Auteur</TD>
+<TD class="hat" style="width:78%; vertical-align:left;">Règlement général des forums : à lire avant de poster</TD>
+</TR>
+<TR>
+<TD class="C2S1" style="text-align:left; vertical-align:top;"><span class="big"><a name="53092"></a><b>Grospix</b></span><BR><B>Mascotte</B><BR><IMG SRC="/phpBB/images/grade-teamgp.png" alt=""><br><div class="avatar"><img src="https://www.grospixels.com/phpBB/images/avatars/grospix.gif" alt=""></div><BR>Inscrit : Mar 07, 2002<BR>Messages : 81<BR>De : Grospixland<BR><BR>Hors ligne</TD><TD class="C2S1" style="text-align:left;"><img src="themes/GP_light/post_icon.gif" alt="">Posté le: 2003-04-22 07:28<hr>
+
+<div class="message"><b><u>Règlement des forums de Grospixels</u></b><BR><BR>Date de publication : 22 avril 2003<BR>Date d'ouverture des forums : 22 janvier 2001<BR><BR>Les forums (ou fora) de Grospixels sont ouverts à tous, à condition bien sûr de respecter le présent règlement. Celui-ci se justifie par le fait que ces forums constituent un espace privé, mis à disposition des internautes par l'équipe de Grospixels, dans le but d'échanger des idées dans une ambiance amicale, avec un minimum d'organisation afin que tout nouvel arrivant trouve facilement ses marques et puisse s'intégrer. <BR><BR>Aussi, voici certaines règles à respecter, qui ont été examinées par l'ensemble de l'équipe de Grospixels. <BR><BR>- Tout intervenant au sein d'un fil de discussion en respectera le sujet. S'il désire partir dans une direction qui n'est pas celle de la discussion initiale, libre à lui d'en lancer une nouvelle. Il n'y a aucune limite au nombre de fils de discussions que peut lancer un utilisateur, à condition qu'il n'abuse pas de cette fonction. De même, les sujets de discussions lancés devront être en conformité avec le thème de la catégorie indiquée en page d'accueil des forums, et chaque discussion ne devra être lancée que dans un seul forum. <BR><BR>- Le ton général est voulu amical. Les insultes, provocations et tentatives de semer le trouble ne sont en aucun cas acceptés, de même que les comportements visant à polluer une discussion ou encombrer sciemment les forums de messages sans intérêt. Il est d'autre part demandé à tous les membres de ne jamais oublier qu'il s'expriment par écrit, ce qui a tendance à rendre les mots utilisés plus lourds de sens, ou pouvant provoquer des malentendus que les smileys ne suffisent pas toujours à éviter (l'expérience le montre). Enfin, même si ce n'est pas une obligation formelle, les nouveaux arrivants seront d'autant plus appréciés qu'ils prendront le temps de quelques mots d'introduction amicaux lors de leur premier message. <BR><BR>- Le respect de chacun, de ce qu'il est (ou peut être) et de ce qu'il pense (ou peut penser) est de mise, y compris lorsqu'on fait usage du second degré ou de l'humour. Dans le cas particulier du forum hors-sujet, les discussions éviteront, dans la mesure du possible, d'être trop partisanes. Aucune incitation à la haine, quelle qu'elle soit, ne sera tolérée. <BR><BR>- Essayer d'écrire dans un français correct. Le langage SMS et les raccourcis utilisés sur IRC et autres messageries sont interdits. Le but est de rendre la lecture des messages agréable au plus grand nombre. Il ne s'agit pas d'élitisme, nous demandons simplement aux membres du forum de faire un effort. <BR><BR>- En dehors du forum réservé à l'équipe, les discussions sont ouvertes à tous. Cela signifie que chacun devra tenir des propos accessibles à toutes les personnes qui les lisent. Les échanges compréhensibles uniquement entre initiés se limiteront à la messagerie privée du forum. <BR><BR>- Les petites annonces de vente ou de recherche devront se limiter au domaine des jeux vidéo, et être publiées dans ce topic :<BR><!-- BBCode auto-link start --><a href="http://www.grospixels.com/phpBB/viewtopic.php?topic=12045&forum=8&start=0" target="_blank">http://www.grospixels.com/phpBB/viewtopic.php?topic=12045&forum=8&start=0</a><!-- BBCode auto-link end --><BR><BR>- Les messages à caractère publicitaire, que ce soit à but lucratif ou pas, ne sont acceptés que très ponctuellement, sur demande préalable auprès d'un modérateur, et de la part de membres actifs du forum. Ils ne devront concerner que des activités en rapport avec le jeu vidéo.<BR><BR>- Les sujets de discussion politiques et religieux ne sont pas acceptés, ainsi que la politisation rampante ou directe des débats, quels qu'ils soient. L'équipe de Grospixels a pris cette décision en janvier 2015, après plus de 12 ans d'existence du forum, suite à de nombreux incidents. Il apparaît que ces deux thèmes génèrent des tensions qui augmentent sensiblement le travail des modérateurs, sur un forum où, rappelons-le, on est avant tout censé échanger sur le jeu vidéo et son histoire.<BR><BR>- Nous consacrons beaucoup de temps, d'énergie, et même un peu d'argent à la réalisation des articles, dossiers et bonus que propose le site, ainsi qu'à leur mise en forme. Aussi, nous demandons à toutes les personnes qui fréquentent le forum d'accorder au contenu du site l'attention qu'il mérite et de passer par la page d'accueil principale du site avant de venir sur les forums.<BR><BR>Tant que ces règles seront respectées, les administrateurs et modérateurs du forum s'efforceront de ne pas effacer ou modifier de messages ni de fils de discussion, et personne ne sera banni. Nous sommes néanmoins seuls juges du respect ou du non-respect de ces règles, et disposons de tous les outils de censure qu'on trouve habituellement dans un forum de ce type. <BR><BR>Toute l'équipe de Grospixels vous souhaite un bon surf sur notre site et nos forums, en tout amitié.</div>
+<hr>&nbsp;&nbsp;<a href="https://www.grospixels.com" TARGET="_blank"><IMG SRC="themes/GP_light/user_www.gif" ALT="Voir le site web de Grospix"></a>
+</TD></TR></table></div>
+
+<div class="pagediv">
+<TABLE style="width:100%; text-align:center; border:none;"><TR><TD style="width:60%; text-align:left; vertical-align:top;"><br><a href="/phpBB/index.php">Index du Forum</a><b> » » </b><a href="/phpBB/viewforum.php?forum=1">Jeux</a><b> » » </b>Règlement général des forums : à lire avant de poster<br><br><IMG SRC="themes/GP_light/bouton_closed.png" style="margin:0 10px;" alt=""></TD><TD style="width:40%; text-align:right; vertical-align:top;"><form name="form1"><div style="font-size:13px; margin-bottom:3px;">1 message &#8226; page <select name="menu1" class="pageselect" onChange="MM_jumpMenu('parent',this,0)"><option value="viewtopic.php?topic=3801&amp;forum=1&amp;start=0" selected>1</option></select></div><span class="pages"><span>1</span></span></form>
+<br><FORM ACTION="viewforum.php" METHOD="GET">
+<SELECT NAME="forum"><OPTION VALUE="-1">Sélectionnez un Forum</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="1">Jeux</OPTION>
+<OPTION VALUE="3">Sociétés et créateurs</OPTION>
+<OPTION VALUE="6">Trivias et entraide</OPTION>
+<OPTION VALUE="17">Musique</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="2">Micros et consoles</OPTION>
+<OPTION VALUE="7">Emulation</OPTION>
+<OPTION VALUE="9">Technique</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="15">Groblogs</OPTION>
+<OPTION VALUE="18">Créations</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="12">Discussions & Débats</OPTION>
+<OPTION VALUE="4">Evénements</OPTION>
+<OPTION VALUE="5">Gromatches</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="13">Compétition</OPTION>
+<OPTION VALUE="14">Jeu en ligne</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="8">Hors-sujet</OPTION>
+<OPTION VALUE="16">Vie du site</OPTION>
+<OPTION VALUE="-1">----------------</OPTION>
+<OPTION VALUE="0">No More Forums</OPTION>
+</SELECT>
+<INPUT TYPE="SUBMIT" VALUE="Aller à">
+</FORM></TD></TR></TABLE></div>
+
+</div>
+<!-- fin de la table des forums -->
+<br>
+<!-- début de la queue -->
+<div class="tail"><br><br>Forum www.grospixels.com (&copy; 2011-2019 Grospixels)</div>
+</center>
+</div>
+<!-- fin de contenu -->
+</div>
+<!-- fin de forum_position -->
+</body></html>
